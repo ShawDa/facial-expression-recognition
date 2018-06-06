@@ -19,11 +19,12 @@ Facial expression recognition using convolutional neural network.
 https://github.com/isseu/emotion-recognition-neural-networks
 
 ## Citation
-@inproceedings{li2017reliable,
-  title={Reliable Crowdsourcing and Deep Locality-Preserving Learning for Expression Recognition in the Wild},
-  author={Li, Shan and Deng, Weihong and Du, JunPing},
-  booktitle={2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  pages={2584--2593},
-  year={2017},
-  organization={IEEE}
-}
+    @inproceedings{li2017reliable,
+      title={Reliable Crowdsourcing and Deep Locality-Preserving Learning for Expression Recognition in the Wild},
+      author={Li, Shan and Deng, Weihong and Du, JunPing},
+      booktitle={2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+      pages={2584--2593},
+      year={2017},
+      organization={IEEE}
+    }
+
