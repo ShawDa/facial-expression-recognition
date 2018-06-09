@@ -15,11 +15,14 @@ Facial expression recognition using convolutional neural network.
 
 [RAF_Dataset](http://www.whdeng.cn/RAF/model1.html):Include 15399 basic images and 3954 compound images.
 
-Some processed data can be found here:
+Some processed data can be found here: https://pan.baidu.com/s/14xwd8YeTFk_LDKVn0YSbQA PWD: xxm5
 
 ### Howtouse
 - get data
 - run ```python3 data_process.py``` to generate npy files for training
+
+### Results
+I find some pics in [MS emotion_recognition API](https://azure.microsoft.com/zh-cn/services/cognitive-services/face/#recognition)
 
 ## Reference
 https://github.com/isseu/emotion-recognition-neural-networks
