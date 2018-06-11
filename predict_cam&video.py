@@ -107,6 +107,7 @@ if __name__ == '__main__':
 
             # put CH name on frames
             img_PIL = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
+            # 字体 字体*.ttc的存放路径一般是： /usr/share/fonts/opentype/noto/ 查找指令locate *.ttc
             img_font = ImageFont.truetype('NotoSansCJK-Bold.ttc', 20)
             fillColor = (0, 255, 0)
             position = (face[0]+face[2]-40, face[1]-25)
