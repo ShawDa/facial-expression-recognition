@@ -37,7 +37,9 @@ I find 5 images(happy,happy,suprised,disgusted,surprised) in [MS emotion_recogni
 ![pics/1sF=1.1.png](pics/1sF=1.1.png)![pics/2sF=1.1.png](pics/2sF=1.1.png)![pics/3sF=1.1.png](pics/3sF=1.1.png)![pics/4sF=1.1.png](pics/4sF=1.1.png)![pics/5sF=1.1.png](pics/5sF=1.1.png)
 
 The first row shows original images, the second shows predicted images using raf_aligned dataset, the third and fourth show predicted images using Kaggle_fer dataset processed by opencv when scaleFactor=1.3&1.1 respectively.
+
 It seems that the results using raf_aligned dataset are not good. The reason might be that raf_aligned images are processed by humans and we predict faces using opencv. So using raf dataset processed by opencv to train the model might be better.
+
 And the results seem better when using processed Kaggle_fer2013 dataset by scaleFactor=1.1. I think that is bacause of more training images.
 
 ## Reference
