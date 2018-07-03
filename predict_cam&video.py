@@ -5,6 +5,7 @@ from constants import *
 from train import EmotionRecognition
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
+import time
 
 global face
 cascade_classifier = cv2.CascadeClassifier(CASC_PATH)
@@ -76,6 +77,7 @@ if __name__ == '__main__':
 
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
     out = cv2.VideoWriter('face.mp4', fourcc, 10, (640, 480))
+    fps_time = 0
 
     while True:
         # Capture frame-by-frame
@@ -115,10 +117,17 @@ if __name__ == '__main__':
             ch_str = '中国'
             draw.text(position, ch_str, font=img_font, fill=fillColor)
             frame = cv2.cvtColor(np.asarray(img_PIL), cv2.COLOR_RGB2BGR)
-
+        
+        # FPS   
+        cv2.putText(image,
+                    "FPS: %f" % (1.0 / (time.time() - fps_time)),
+                    (10, 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
+                    (0, 255, 0), 2)
+    
         out.write(frame)
         # Display the resulting frame
         cv2.imshow('Video', frame)
+        fps_time = time.time()
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
