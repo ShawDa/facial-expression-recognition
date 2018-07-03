@@ -69,6 +69,10 @@ if __name__ == '__main__':
         video_capture = cv2.VideoCapture(0)
     else:  # video
         video_capture = cv2.VideoCapture(mode)
+    
+    # 设定摄像头分辨率
+    video_capture.set(cv2.CAP_PROP_FRAME_WIDTH, 1000)
+    video_capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 550)
 
     feelings_faces = []
 
